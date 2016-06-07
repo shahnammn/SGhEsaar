@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGH", "SGH.csproj", "{8700F4EE-9023-4A52-93E6-665F3DAEA9EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBLayer", "..\ClassLibrary1\DBLayer.csproj", "{DD1EC2A7-E6AD-4EBD-8FB2-F95AB74A1B7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heidarpour.WebControlUI", "..\Heidarpour.WebControlUI\Heidarpour.WebControlUI.csproj", "{370C869A-C8DA-44D7-9D72-443D5263E727}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8700F4EE-9023-4A52-93E6-665F3DAEA9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8700F4EE-9023-4A52-93E6-665F3DAEA9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8700F4EE-9023-4A52-93E6-665F3DAEA9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8700F4EE-9023-4A52-93E6-665F3DAEA9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1EC2A7-E6AD-4EBD-8FB2-F95AB74A1B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1EC2A7-E6AD-4EBD-8FB2-F95AB74A1B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1EC2A7-E6AD-4EBD-8FB2-F95AB74A1B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1EC2A7-E6AD-4EBD-8FB2-F95AB74A1B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{370C869A-C8DA-44D7-9D72-443D5263E727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370C869A-C8DA-44D7-9D72-443D5263E727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370C869A-C8DA-44D7-9D72-443D5263E727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370C869A-C8DA-44D7-9D72-443D5263E727}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8700F4EE-9023-4A52-93E6-665F3DAEA9EC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Heidarpour.WebControlUI, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Heidarpour.WebControlUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="ClintInfoEdit.aspx" />
+    <Content Include="db\Database11.accdb" />
+    <Content Include="gallery.aspx" />
+    <Content Include="Gallery\Moharam1395\content\custom.css" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0777.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0778.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0779.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0781.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0788.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0789.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0790.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0795.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0796.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0798.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0806.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0809.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0812.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0816.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0818.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0825.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0831.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0833.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0842.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0844.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0845.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0846.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0851.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0852.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0878.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0882.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0909.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0930.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0933.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0934.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0942.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0949.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0953.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_0960.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1433-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1443-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1469-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1484-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1485.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1488.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1493.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1494.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1497.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1500.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1504-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1504.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1505.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1512.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1514.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1532.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1543-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1545-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1564-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1571-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\large\IMG_1573.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0777.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0778.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0779.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0781.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0788.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0789.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0790.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0795.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0796.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0798.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0806.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0809.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0812.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0816.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0818.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0825.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0831.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0833.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0842.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0844.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0845.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0846.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0851.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0852.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0878.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0882.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0909.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0930.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0933.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0934.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0942.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0949.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0953.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_0960.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1433-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1443-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1469-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1484-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1485.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1488.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1493.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1494.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1497.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1500.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1504-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1504.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1505.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1512.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1514.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1532.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1543-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1545-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1564-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1571-2.jpg" />
+    <Content Include="Gallery\Moharam1395\content\images\thumb\IMG_1573.jpg" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0777_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0778_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0779_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0781_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0788_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0789_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0790_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0795_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0796_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0798_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0806_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0809_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0812_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0816_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0818_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0825_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0831_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0833_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0842_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0844_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0845_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0846_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0851_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0852_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0878_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0882_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0909_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0930_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0933_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0934_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0942_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0949_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0953_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_0960_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1433-2_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1443-2_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1469-2_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1484-2_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1485_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1488_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1493_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1494_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1497_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1500_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1504-2_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1504_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1505_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1512_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1514_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1532_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1543-2_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1545-2_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1564-2_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1571-2_large.html" />
+    <Content Include="Gallery\Moharam1395\content\IMG_1573_large.html" />
+    <Content Include="Gallery\Moharam1395\content\logo.png" />
+    <Content Include="Gallery\Moharam1395\index.html" />
+    <Content Include="Gallery\Moharam1395\index_2.html" />
+    <Content Include="Gallery\Moharam1395\index_3.html" />
+    <Content Include="Gallery\Moharam1395\index_4.html" />
+    <Content Include="Gallery\Moharam1395\index_5.html" />
+    <Content Include="Gallery\Moharam1395\index_6.html" />
+    <Content Include="Gallery\Moharam1395\index_7.html" />
+    <Content Include="Gallery\Moharam1395\resources\css\ie6.css" />
+    <Content Include="Gallery\Moharam1395\resources\css\ie7.css" />
+    <Content Include="Gallery\Moharam1395\resources\css\master.css" />
+    <Content Include="Gallery\Moharam1395\resources\js\live_update.js" />
+    <Content Include="Gallery\Moharam1395\resources\js\pngfix.js" />
+    <Content Include="Gallery\Moharam1395\resources\misc\icon_fullsize.png" />
+    <Content Include="Gallery\Moharam1395\resources\misc\shadow-grid.gif" />
+    <Content Include="Gallery\Moharam1395\resources\misc\shadow.png" />
+    <Content Include="Gallery\Moharam1395\resources\version_info.png" />
+    <Content Include="Grant.aspx" />
+    <Content Include="images\41658171sandoogh3.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="installmentDetail.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="overNighte.aspx" />
+    <Content Include="Scripts\azan.js" />
+    <Content Include="images\flasher.gif" />
+    <Content Include="images\s-flash.gif" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="AccountPayment.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClintInfoEdit.aspx.cs">
+      <DependentUpon>ClintInfoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClintInfoEdit.aspx.designer.cs">
+      <DependentUpon>ClintInfoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Grant.aspx.cs">
+      <DependentUpon>Grant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grant.aspx.designer.cs">
+      <DependentUpon>Grant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="installmentDetail.aspx.cs">
+      <DependentUpon>installmentDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="installmentDetail.aspx.designer.cs">
+      <DependentUpon>installmentDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="overNighte.aspx.cs">
+      <DependentUpon>overNighte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="overNighte.aspx.designer.cs">
+      <DependentUpon>overNighte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayment.aspx.cs">
+      <DependentUpon>AccountPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountPayment.aspx.designer.cs">
+      <DependentUpon>AccountPayment.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\DBLayer.csproj">
+      <Project>{DD1EC2A7-E6AD-4EBD-8FB2-F95AB74A1B7C}</Project>
+      <Name>DBLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Grant.aspx.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59163</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

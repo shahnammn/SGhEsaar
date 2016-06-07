@@ -1,0 +1,10 @@
+D:\Desktop\Heidarpour.WebControlUI__Source_And_Sample_1.1_.Net4\Heidarpour.WebControlUI\bin\Debug\Heidarpour.WebControlUI.dll
+D:\Desktop\Heidarpour.WebControlUI__Source_And_Sample_1.1_.Net4\Heidarpour.WebControlUI\bin\Debug\Heidarpour.WebControlUI.pdb
+D:\Desktop\Heidarpour.WebControlUI__Source_And_Sample_1.1_.Net4\Heidarpour.WebControlUI\obj\Debug\ResolveAssemblyReference.cache
+D:\Desktop\Heidarpour.WebControlUI__Source_And_Sample_1.1_.Net4\Heidarpour.WebControlUI\obj\Debug\Heidarpour.WebControlUI.dll
+D:\Desktop\Heidarpour.WebControlUI__Source_And_Sample_1.1_.Net4\Heidarpour.WebControlUI\obj\Debug\Heidarpour.WebControlUI.pdb
+D:\Sandogh Project\VS\Heidarpour.WebControlUI\bin\Debug\Heidarpour.WebControlUI.dll
+D:\Sandogh Project\VS\Heidarpour.WebControlUI\bin\Debug\Heidarpour.WebControlUI.pdb
+D:\Sandogh Project\VS\Heidarpour.WebControlUI\obj\Debug\ResolveAssemblyReference.cache
+D:\Sandogh Project\VS\Heidarpour.WebControlUI\obj\Debug\Heidarpour.WebControlUI.dll
+D:\Sandogh Project\VS\Heidarpour.WebControlUI\obj\Debug\Heidarpour.WebControlUI.pdb

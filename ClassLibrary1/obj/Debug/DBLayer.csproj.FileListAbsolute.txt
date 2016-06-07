@@ -1,0 +1,6 @@
+D:\Sandogh Project\VS\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+D:\Sandogh Project\VS\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+D:\Sandogh Project\VS\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\Sandogh Project\VS\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+D:\Sandogh Project\VS\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\Sandogh Project\VS\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

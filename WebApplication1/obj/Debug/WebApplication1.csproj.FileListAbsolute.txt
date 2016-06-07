@@ -1,0 +1,5 @@
+D:\Sandogh Project\VS\WebApplication1\bin\WebApplication1.dll
+D:\Sandogh Project\VS\WebApplication1\bin\WebApplication1.pdb
+D:\Sandogh Project\VS\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\Sandogh Project\VS\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Sandogh Project\VS\WebApplication1\obj\Debug\WebApplication1.pdb

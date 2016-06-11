@@ -18,59 +18,69 @@
         ga('create', 'UA-5336402-2', 'auto');
         ga('send', 'pageview');
 
-</script>
-    </head>
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            font-size: xx-small;
+        }
+    </style>
+</head>
 <body>
     <form runat="server">
     <div class="page">
         <div class="header">
-            <div class="title">
-                <table width="100%">
+<%--            <div class="title">--%>
+                <table width="100%" >
                     <tr>
-                        <td width="15%">
-                            <img src="/images/logo.gif" alt="صندوق قرض الحسنه ایثار و تعاون" />
+                        <td width="15%" align="center">
+                            <img src="/images/logo.gif" width="110px" hidden="110px" alt="صندوق قرض الحسنه ایثار و تعاون" 
+                                 />
                         </td>
-                        <td align="right" width="100%">
+                        <td align="right" width="60%">
                             <h1>
                                 صندوق قرض الحسنه ایثار و تعاون
                             </h1>
                         </td>
-                        <td align="center" style="width: 15%">
+                        <td style="width: 25%">
                             <table width="100%">
                                 <tr>
-                                    <td>
+                                    <td align="center">
                                         <div class="dateTime">
                                             <asp:Label ID="lblDateTime" runat="server"></asp:Label>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr align="center">
                                     <td>
-                                         <div class="loginDisplay">
-                <asp:LoginView ID="HeadLoginView" runat="server">
-                    <AnonymousTemplate>
-                        [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">ورود</a> ]
-                    </AnonymousTemplate>
-                    <LoggedInTemplate>
-                        خوش آمدید <span class="bold">
-                            <asp:LoginName ID="HeadLoginName" runat="server" />
-                        </span>! [
-                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="LogOut"
-                            LogoutPageUrl="~/" />
-                        ]
-                    </LoggedInTemplate>
-                </asp:LoginView>
-                <asp:LinkButton ID="LogOut" runat="server" Visible="False" OnClick="logOut_Click">خروج</asp:LinkButton>
-                <asp:Label ID="lblwelcome" runat="server"></asp:Label>
-            </div>
+                                        <div class="loginDisplay">
+                                            <asp:LoginView ID="HeadLoginView" runat="server">
+                                                <AnonymousTemplate>
+                                                    [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">ورود</a> ]
+                                                </AnonymousTemplate>
+                                                <LoggedInTemplate>
+                                                    خوش آمدید <span class="bold">
+                                                        <asp:LoginName ID="HeadLoginName" runat="server" />
+                                                    </span>! [
+                                                    <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="LogOut"
+                                                        LogoutPageUrl="~/" />
+                                                    ]
+                                                </LoggedInTemplate>
+                                            </asp:LoginView>
+                                            <asp:ImageButton ID="ProfileImage" Visible="False" Width="25" Height="25" runat="server" />
+                                            <asp:Label ID="lblwelcome" runat="server"></asp:Label><br/>
+                                            <asp:LinkButton ID="LogOut" runat="server" Visible="False" OnClick="logOut_Click">خروج</asp:LinkButton><br/>
+
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                 </table>
-            </div>
-           
+<%--            </div>--%>
+            
+
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
                     IncludeStyleBlock="false" Orientation="Horizontal">
@@ -84,6 +94,13 @@
             </div>
         </div>
         <div class="main">
+<%--            <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em"--%>
+<%--                PathSeparator=" : ">--%>
+<%--                <CurrentNodeStyle ForeColor="#333333" />--%>
+<%--                <NodeStyle Font-Bold="True" ForeColor="#284E98" />--%>
+<%--                <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />--%>
+<%--                <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />--%>
+<%--            </asp:SiteMapPath>--%>
             <asp:ContentPlaceHolder ID="MainContent" runat="server" />
         </div>
         <div class="clear">
@@ -91,6 +108,8 @@
     </div>
     <div class="footer">
         حقوق محفوظ می باشد
+        <br />
+        <span class="style1">Version 0.0.1.5 </span>
     </div>
     </form>
 </body>

@@ -22,7 +22,9 @@ namespace WebApplication1
             {
                 HeadLoginView.Visible= false;
                 LogOut.Visible = true;
-                lblwelcome.Text = "به سایت خوش آمدید";
+                lblwelcome.Text = Session["ClientFirstName"] + @" " + Session["ClientLastName"] + @" به سایت خوش آمدید";
+                ProfileImage.ImageUrl = @"~/images/avatar/" + Session["avatarName"];
+                ProfileImage.Visible = true;
             }
             else
             {

@@ -25,6 +25,7 @@ namespace WebApplication1.Account
                     Session.Add("AccountId", Convert.ToDecimal(dataTable.Rows[0][3].ToString()));
                     Session.Add("ClientFirstName", dataTable.Rows[0][0].ToString());
                     Session.Add("ClientLastName", dataTable.Rows[0][1].ToString());
+                    Session.Add("avatarName", dataTable.Rows[0]["avatarName"].ToString());
                     Response.Redirect("~/main.aspx");
                 }
                 else

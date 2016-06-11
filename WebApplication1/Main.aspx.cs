@@ -18,6 +18,7 @@ namespace WebApplication1
             
             lblName.Text = " صفحه شخصی " + Session["ClientFirstName"] + " " + Session["ClientLastName"];
             this.Page.Title = lblName.Text;
+            profileImage.ImageUrl = @"~/images/avatar/" + Session["avatarName"];
             PnlAdmin.Visible = (string)Session["UserName"] == "000";
             AccessDataSource1.SelectCommand =
                 "SELECT [Amount], [date], [Description] FROM [payment] where Account_ID=" + Session["AccountId"] +

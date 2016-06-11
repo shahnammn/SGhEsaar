@@ -1,13 +1,31 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
     CodeBehind="Main.aspx.cs" Inherits="WebApplication1.Main" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <style type="text/css">
+        .style2
+        {
+            text-align: center;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h3>
-        <asp:Label ID="lblName" runat="server" Text="Label"></asp:Label>
-    </h3>
-    <div style="text-align: center;" >
-        <asp:Label ID="lblNote" runat="server" Visible="False" Font-Size="Large"></asp:Label></div>
+    <table>
+        <tr>
+            <td width="85%">
+                <h3>
+                    &nbsp;
+                    <div style="text-align: center;">
+                        <asp:Label ID="lblNote" runat="server" Visible="False" Font-Size="Large"></asp:Label>
+                    </div>
+                </h3>
+            </td>
+            <td width="15%" class="style2" align="center">
+                <asp:Image ID="profileImage" Width="150" Height="150" runat="server" />
+                <asp:Label ID="lblName" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+    </table>
     <table width="100%">
         <tr>
             <td width="50%">
@@ -26,9 +44,12 @@
                 <asp:Panel ID="PnlAdmin" CssClass="menu" runat="server" GroupingText="مدیریت سیستم صندوق">
                     <div>
                         <ul>
-                            <li><asp:LinkButton ID="LinkButton1" PostBackUrl="AccountPayment.aspx" runat="server">واریز مبلغ به حساب</asp:LinkButton></li>
-                            <li><asp:LinkButton ID="LinkButton4" PostBackUrl="Grant.aspx" runat="server">اعطای تسهیلات</asp:LinkButton></li>
-                            <li><asp:Button ID="btnOverNighte" runat="server" Text="اجرای شبانه" OnClick="btnOverNighte_OnClick"/></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton1" PostBackUrl="AccountPayment.aspx" runat="server">واریز مبلغ به حساب</asp:LinkButton></li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton4" PostBackUrl="Grant.aspx" runat="server">اعطای تسهیلات</asp:LinkButton></li>
+                            <li>
+                                <asp:Button ID="btnOverNighte" runat="server" Text="اجرای شبانه" OnClick="btnOverNighte_OnClick" /></li>
                         </ul>
                     </div>
                 </asp:Panel>
@@ -71,10 +92,9 @@
                 <asp:Panel ID="Panel3" CssClass="menu" runat="server" GroupingText="تسهیلات مشتری">
                     <div>
                         <asp:Label ID="lblNoteLoan" runat="server" Text="" Visible="False"></asp:Label><br />
-                        <asp:Label ID="lblLoanNumber" runat="server" Text="" ></asp:Label><br />
-                        <asp:Label ID="lblGrantDate" runat="server" Text="" ></asp:Label><br />
-                        <asp:Label ID="lblLoanAmount" runat="server" Text="" ></asp:Label><br />
-                        
+                        <asp:Label ID="lblLoanNumber" runat="server" Text=""></asp:Label><br />
+                        <asp:Label ID="lblGrantDate" runat="server" Text=""></asp:Label><br />
+                        <asp:Label ID="lblLoanAmount" runat="server" Text=""></asp:Label><br />
                         <asp:Panel ID="Panel4" CssClass="menu" runat="server" ScrollBars="Vertical" Style="height: 300px">
                             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CellPadding="4"
                                 Caption="جدول اقساط تسهیلات" DataSourceID="loanDS" ForeColor="#333333" GridLines="None"

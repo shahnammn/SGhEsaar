@@ -78,7 +78,7 @@ namespace WebApplication1
                 Loan.LoanStruct result = new Loan.LoanStruct();
                 if (_grantDate.Date != null)
                     result = loanClass.grantLoan(txtClientNum.Text, (DateTime)_grantDate.Date, Convert.ToInt32(_ddlTimeLoan.SelectedValue.ToString()), Convert.ToDecimal(_txtAmountLoan.Text), Convert.ToInt32(hfClientid.Value), false);
-                lblnote.Text = "عملیات با موفقیت انجام شد. شماره تسهیلات :" + result.loanNumber;
+                lblnote.Text = @"عملیات با موفقیت انجام شد. شماره تسهیلات :" + result.loanNumber;
                 lblnote.ForeColor = System.Drawing.Color.DarkCyan;
                 btnok.Enabled = btnSearch.Enabled = false;
             }

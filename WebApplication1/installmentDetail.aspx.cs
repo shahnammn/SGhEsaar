@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using DBLayare;
 
 namespace WebApplication1
 {
-    public partial class installmentDetail : System.Web.UI.Page
+    public partial class InstallmentDetail : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,7 +22,7 @@ namespace WebApplication1
             else
             {
                 lblNoteLoan.Font.Size = 12;
-                lblNoteLoan.Text = "در حال حاضر تسهیلات اعطا شده ای وجود ندارد";
+                lblNoteLoan.Text = @"در حال حاضر تسهیلات اعطا شده ای وجود ندارد";
                 lblNoteLoan.Visible = true;
             }
 
@@ -41,23 +36,23 @@ namespace WebApplication1
                                       pc1.GetDayOfMonth(Convert.ToDateTime(a));
                     GridView2.Rows[i].Cells[1].Text = datetime;
                     decimal balanceString = Convert.ToDecimal(GridView2.Rows[i].Cells[2].Text);
-                    GridView2.Rows[i].Cells[2].Text = balanceString.ToString("0,0") + " ريال ";
+                    GridView2.Rows[i].Cells[2].Text = balanceString.ToString("0,0") + @" ريال ";
                     switch (GridView2.Rows[i].Cells[3].Text)
                     {
                         case "0":
                             {
-                                GridView2.Rows[i].Cells[3].Text = "پرداخت نشده";
+                                GridView2.Rows[i].Cells[3].Text = @"پرداخت نشده";
                                 break;
                             }
                         case "2":
                             {
-                                GridView2.Rows[i].Cells[3].Text = "پرداخت شده";
+                                GridView2.Rows[i].Cells[3].Text = @"پرداخت شده";
                                 GridView2.Rows[i].BackColor = System.Drawing.Color.Aquamarine;
                                 break;
                             }
                         case "1":
                             {
-                                GridView2.Rows[i].Cells[3].Text = "سررسید گذشته";
+                                GridView2.Rows[i].Cells[3].Text = @"سررسید گذشته";
                                 GridView2.Rows[i].BackColor = System.Drawing.Color.LightPink;
                                 break;
                             }

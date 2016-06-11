@@ -12,6 +12,16 @@
     <table width="100%">
         <tr>
             <td width="50%">
+                <asp:Image ID="profileImage" Width="150" Height="150" runat="server" /><br/>
+                    <asp:TextBox ID="txtName" runat="server" Visible="False" />
+        <asp:FileUpload ID="fuDemo" runat="server"  />
+        <asp:Button ID="btnSubmit" runat="server" OnClick="SaveDetails" Text="ارسال" />
+            </td>
+            <td width="50%">عکسها با فرمت JPG و با اندازه 150 در 150 و حجم کمتر از 200 کیلو بایت 
+                باشند</td>
+        </tr>
+        <tr>
+            <td width="50%">
                 نام:
                 <asp:Label ID="lblFName" runat="server" Text=""></asp:Label>
             </td>

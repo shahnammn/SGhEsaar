@@ -249,13 +249,8 @@ div.accountInfo
 
 .dateTime {
     font-size: 1.1em;
-    padding: 10px;
-    text-align: left;
     color: white;
-    float: left;
     font-style: oblique;
-    vertical-align: top;
-    display: table-row;
 }
 
 .title
